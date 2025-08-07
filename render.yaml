@@ -50,3 +50,4 @@ databases:
   - name: livingstonepharmacy-db
     databaseName: livingstonepharmacy
     user: livingstonepharmacy_user
+# Updated for Render deployment
