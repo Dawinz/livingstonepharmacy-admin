@@ -1,0 +1,34 @@
+SPACESHIP HOSTING UPLOAD INSTRUCTIONS
+=====================================
+
+1. Login to your Spaceship dashboard
+2. Go to File Manager or use FTP/SFTP
+3. Navigate to public_html directory
+4. Upload all files from this folder
+5. Extract if needed
+6. Set permissions:
+   - Folders: 755
+   - Files: 644
+   - storage folder: 777 (recursive)
+
+AFTER UPLOAD:
+1. Access your domain
+2. Run: composer install --no-dev --optimize-autoloader
+3. Run: php artisan key:generate
+4. Run: php artisan migrate
+5. Run: php artisan storage:link
+6. Run: php artisan config:clear
+7. Run: php artisan cache:clear
+
+DEFAULT LOGIN:
+- Email: admin@gmail.com
+- Password: password
+
+IMPORTANT: Change the default password after first login!
+
+ADVANTAGES OF SPACESHIP:
+- No quota issues
+- Better performance
+- SSH access available
+- More reliable
+- Better support

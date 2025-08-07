@@ -1,0 +1,1 @@
+<?php namespace Database\Seeders; use App\Models\Gateway; use Illuminate\Database\Seeder; class GatewaySeeder extends Seeder { public function run(): void { $gateways = array(); Gateway::insert($gateways); } }
